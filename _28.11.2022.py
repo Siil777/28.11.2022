@@ -63,6 +63,25 @@ if a=="1":
         print("Tugev rasvumine")
     if index>40:
         print("Ohtlik rasvumine")
+        
+        
+        print("Tere! Olen sinu uus sober - Python")
+a=input("Kas leian Sinu keha indeksi ? 0-ei, 1-jah=>")
+if a=="1":
+    while True:
+        try:
+            pikkus=int(input("pikkus"))
+            if pikkus>0 and pikkus<273: break
+        except:
+            
+            print("error, pikkus=175")
+    mass=-1
+    while mass<0 or mass>400:
+        try:
+            mass=int(input("Mass: "))
+        except:
+            
+            print("Error, siis mass=55")
   
     
 
