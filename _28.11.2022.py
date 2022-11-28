@@ -44,7 +44,7 @@ if a=="1":
         mass=55
         print("Error, siis mass=55")
     try:
-        index=mass/0.01**2
+        index=mass/(0.01*pikkus)**2
         if index<16:
             print("Ohtlik alakaal")
         elif index>=16 and index<19:
