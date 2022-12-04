@@ -52,7 +52,7 @@ import math
 j=0
 for i in range(1,16,1):
     A=float(input(f"sisesta A:"))
-    int=(A)==A
+    int(A)==A
     if int(A)==A: j+=1
 print(j)
 
