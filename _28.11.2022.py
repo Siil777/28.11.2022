@@ -7,51 +7,45 @@
 # присваивание переменной nimi введённого пользователем имени
 # вывод на экран текста: nimi ", oi kui ilus nimi!" 
 # вывод на экран текста: nimi  "! Kas leian Sinu keha indeksi? 0-ei, 1-jah => "
-print("Tere! Olen sinu uus sober - Python!")
-a=input("Kas leian Sinu kehaa indeksi ? 0-ei 1-jah=>")
-if a=="1":
-    try:
-        pikkus=int(input("pikkus"))
-    except:
-        pikkus=175
-        print("error, pikkus=175")
-    try:
-        mass=int(input("mass"))
-    except:
-        mass=55
-        print("error, kui mass=55")
-    try:
-        index=mass/(0.01*pikkus)**2
-    except:
-        print("error")
-    if  index<16:  
-        print("Ohtlik alakaal")
-    if index>=16 and index<=19:
-        print("Alakaal")
-    if index>19 and index<=25:
-         print("Normalkaal")
-    if index>25 and index<=30:
-        print("Ulekaal")
-    if index>30 and index<=35:
-        print("Rasvumine")
-    if index>35 and index<=40:
-        print("Tugev rasvumine")
-    if index>40:
-        print("Ohtlik rasvumine")
-else:
-    print("Kahju! see on vaga kasulik info")
-    print("")
-    print("Kohtumiseni, Pavel !Igavesti sinu,Python!")
-
-
-#Цикл (FOR,WHILE,WHILE True)
-#1 option 
-#1.Вводят 15 чисел. Определить, сколько среди них целых.
-import math
-
-j=0
-for i in range(1,16,1):
-    A=float(input(f"sisesta A:"))
+import sys
+print('hi there !I am the Python your new friend')
+while True:
+	t=input('would you like to check your weight?')
+	if t.lower()=='yes' or 'no':
+			if t=='yes':
+				try:
+					height=int(input('enter height:'))
+				except:
+					height=200
+					print('illigal', height=200)
+				try:
+					mass=int(input('enter mass:'))
+	
+				except:
+					mass=100
+					print('incorrect', mass=100)
+				try:
+					index=mass/(0.01*height)**2
+				except:
+					print('error')
+				if index<16:
+					print('dangerous underweight')
+				elif index>=16 and index<19:
+					print('underwight')
+				elif index>19 and index<=25:
+					print('normal weight')
+				elif index>25 and index<=35:
+					print('overweight')
+				elif index>35 and index<=40:
+					print('extreme obesity')
+				elif index>40:
+					print('high-risk-obesity')
+			else:
+				print('that a pity, this is reale usefull info')
+				sys.exit()
+	
+		
+	
     int(A)==A
     if int(A)==A: j+=1
 print(j)
