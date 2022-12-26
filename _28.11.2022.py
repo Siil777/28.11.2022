@@ -41,7 +41,7 @@ while True:
 				elif index>40:
 					print('high-risk-obesity')
 			else:
-				print('that a pity, this is reale usefull info')
+				print('that a pity, this is realy usefull info')
 				sys.exit()
 	
 		
